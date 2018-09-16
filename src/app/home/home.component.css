@@ -1,0 +1,13 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hogwarts-logo {
+    width: 24rem;
+}
+
+h5 {
+    font-size: .9rem;
+}

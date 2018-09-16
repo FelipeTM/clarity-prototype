@@ -1,0 +1,27 @@
+<clr-modal [(clrModalOpen)]="show">
+    <h3 class="modal-title">Add new character</h3>
+    <div class="modal-body">
+      <form clrForm>
+        <clr-input-container>
+          <label>Character's name</label>
+          <input clrInput placeholder="Enter name" name="name" [(ngModel)]="name"/>
+        </clr-input-container>
+    
+        <div class="date-picker-container">
+          <label class="date-picker-label">Character's birthday</label>
+          <input type="date" [(clrDate)]="birthday">
+        </div>
+    
+        <clr-select-container>
+          <label>Character's house</label>
+          <select clrSelect name="selectedHouse" [(ngModel)]="selectedHouse">
+            <option *ngFor="let house of housesOpts" value="{{ house }}">{{ house }}</option>
+          </select>
+        </clr-select-container>
+      </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline" (click)="onCancel()">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="onSave()">Save</button>
+    </div>
+</clr-modal>

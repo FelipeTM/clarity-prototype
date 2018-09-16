@@ -1,0 +1,33 @@
+<header class="header"
+[ngClass]="{
+  'gryffindor-style': houseStyle === housesOpts[0],
+  'hufflepuff-style': houseStyle === housesOpts[1],
+  'ravenclaw-style': houseStyle === housesOpts[2],
+  'slytherin-style': houseStyle === housesOpts[3]
+}">
+  <div class="branding">
+    <div class="nav-link">
+      <clr-icon shape="bolt"></clr-icon>
+      <span class="title">Hogwarts</span>
+    </div>
+  </div>
+
+  <div class="header-nav">
+    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active"><span class="nav-text">Main</span></a>
+    <a class="nav-link" [routerLink]="['/character-list']" routerLinkActive="active"><span class="nav-text">Characters</span></a>
+  </div>
+
+  <div class="header-actions">
+    <span class="title">{{ houseStyle }}</span>
+    <clr-dropdown>
+      <button class="nav-icon" clrDropdownTrigger>
+          <clr-icon shape="home"></clr-icon>
+          <clr-icon shape="caret down"></clr-icon>
+      </button>
+      <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+          <label class="dropdown-header">Choose a style</label>
+          <button *ngFor="let house of housesOpts" (click)="onChangeStyle(house)" clrDropdownItem>{{ house }}</button>
+      </clr-dropdown-menu>
+    </clr-dropdown>
+  </div>
+</header>

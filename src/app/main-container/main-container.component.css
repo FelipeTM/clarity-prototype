@@ -1,0 +1,27 @@
+.header-actions {
+    align-items: center;
+}
+
+.selected-house-style {
+    font-size: .666667rem;
+    font-weight: 400;
+    font-family: Metropolis,"Avenir Next","Helvetica Neue",Arial,sans-serif;
+    letter-spacing: .01em;
+    color: #fafafa;
+}
+
+.gryffindor-style {
+    background-color: #C92100;
+}
+
+.hufflepuff-style {
+    background-color: #D28F00;
+}
+
+.ravenclaw-style {
+    background-color: #004D8A;
+}
+
+.slytherin-style {
+    background-color: #266900;
+}

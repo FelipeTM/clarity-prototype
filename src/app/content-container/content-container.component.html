@@ -1,0 +1,43 @@
+<div class="datagrid-container">
+  <clr-datagrid [(clrDgSelected)]="selectedChars">
+      <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
+      <clr-dg-column [clrDgField]="'birthday'">Birthday</clr-dg-column>
+      <clr-dg-column [clrDgField]="'house'">House</clr-dg-column>
+
+      <clr-dg-placeholder>No characters found!</clr-dg-placeholder>
+  
+      <clr-dg-row *clrDgItems="let character of dataSource" [clrDgItem]="character">
+          <clr-dg-cell>{{character.name}}</clr-dg-cell>
+          <clr-dg-cell>{{character.birthday | date}}</clr-dg-cell>
+          <clr-dg-cell>{{character.house}}</clr-dg-cell>
+      </clr-dg-row>
+  
+      <clr-dg-footer>
+        <clr-dg-pagination #pagination [clrDgPageSize]="10">
+          {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+          of {{pagination.totalItems}} characters
+        </clr-dg-pagination>
+      </clr-dg-footer>
+
+      <!-- <clr-dg-action-bar>
+      </clr-dg-action-bar> -->
+
+  </clr-datagrid>
+</div>
+
+<div class="btn-group">
+  <button (click)="onAdd()" class="btn btn-primary">
+    <clr-icon shape="plus"></clr-icon>
+    Add
+  </button>
+  <button (click)="onEdit(selectedChars)" [disabled]="selectedChars.length !== 1" class="btn btn">
+    <clr-icon shape="pencil" class="is-solid"></clr-icon>
+    Edit
+  </button>
+  <button (click)="onDelete(selectedChars)" [disabled]="selectedChars.length === 0" class="btn btn-danger-outline">
+    <clr-icon shape="trash" class="is-solid"></clr-icon>
+    Delete
+  </button>
+</div>
+
+<app-character-insert-dialog></app-character-insert-dialog>

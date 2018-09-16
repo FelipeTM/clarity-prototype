@@ -1,0 +1,52 @@
+{
+    "characters":[
+        {
+            "id": 0,
+            "name": "Harry Potter",
+            "birthday": "1980-06-31",
+            "birthplace": "England, Great Britain",
+            "wand": "11\" Holly, Phoenix feather",
+            "house": "Gryffindor"
+        },
+        {
+            "id": 1,
+            "name": "Hermione Granger",
+            "birthday": "1979-09-19",
+            "birthplace": "England, Great Britain",
+            "wand": "10¾\" Vine, Dragon heartstring",
+            "house": "Gryffindor"
+        },
+        {
+            "id": 2,
+            "name": "Ron Weasley",
+            "birthday": "1980-03-01",
+            "birthplace": "England, Great Britain",
+            "wand": "14\" Willow, Unicorn hair",
+            "house": "Gryffindor"
+        },
+        {
+            "id": 3,
+            "name": "Draco Malfoy",
+            "birthday": "1980-06-05",
+            "birthplace": "England, Great Britain",
+            "wand": "10\" Hawthorn, Unicorn hair",
+            "house": "Slytherin"
+        },
+        {
+            "id": 4,
+            "name": "Cedric Diggory",
+            "birthday": "1977-10-30",
+            "birthplace": "England, Great Britain",
+            "wand": "12¼\" Ash, Unicorn hair",
+            "house": "Hufflepuff"
+        },
+        {
+            "id": 5,
+            "name": "Luna Lovegood",
+            "birthday": "1981-02-13",
+            "birthplace": "England, Great Britain",
+            "wand": "Unknown",
+            "house": "Ravenclaw"
+        }
+    ]
+}
