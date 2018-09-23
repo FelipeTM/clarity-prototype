@@ -10,19 +10,21 @@ import { ClarityModule } from '@clr/angular';
 import { ClrFormsNextModule  } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainContainerComponent } from './main-container/main-container.component';
-import { ContentContainerComponent } from './content-container/content-container.component';
+import { CharacterListComponent } from './character-list/character-list.component';
 
 import { JSONService } from './services/json.service';
-import { CharacterInsertDialogComponent } from './content-container/character-insert-dialog/character-insert-dialog.component';
+import { CharacterInsertDialogComponent } from './character-list/character-insert-dialog/character-insert-dialog.component';
 import { HomeComponent } from './home/home.component';
+import { HousesComponent } from './houses/houses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainContainerComponent,
-    ContentContainerComponent,
+    CharacterListComponent,
     CharacterInsertDialogComponent,
-    HomeComponent
+    HomeComponent,
+    HousesComponent
   ],
   imports: [
     AppRoutingModule,

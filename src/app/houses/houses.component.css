@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 1rem;
+    width: auto;
+}
+
+.house-crest {
+    width: 340px;
+    max-width: 100%;
+    height: 370px;
+}

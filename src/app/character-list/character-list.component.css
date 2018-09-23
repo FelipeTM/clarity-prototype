@@ -4,18 +4,12 @@
     flex-direction: column;
 }
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.btn-group {
+/* .btn-group {
     display: flex;
     margin-top: .5rem;
     margin-right: .5rem;
     justify-content: center;
-}
+} */
 
 .input-container {
     display: flex;

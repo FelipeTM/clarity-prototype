@@ -19,13 +19,27 @@
         </clr-dg-pagination>
       </clr-dg-footer>
 
-      <!-- <clr-dg-action-bar>
-      </clr-dg-action-bar> -->
+      <clr-dg-action-bar>
+        <div class="btn-group">
+          <button (click)="onAdd()" class="btn btn-sm btn-primary">
+            <clr-icon shape="plus"></clr-icon>
+            Add
+          </button>
+          <button (click)="onEdit(selectedChars)" [disabled]="selectedChars.length !== 1" class="btn btn-sm">
+            <clr-icon shape="pencil" class="is-solid"></clr-icon>
+            Edit
+          </button>
+          <button (click)="onDelete(selectedChars)" [disabled]="selectedChars.length === 0" class="btn btn-sm btn-danger-outline">
+            <clr-icon shape="trash" class="is-solid"></clr-icon>
+            Delete
+          </button>
+        </div>
+      </clr-dg-action-bar>
 
   </clr-datagrid>
 </div>
 
-<div class="btn-group">
+<!-- <div class="btn-group">
   <button (click)="onAdd()" class="btn btn-primary">
     <clr-icon shape="plus"></clr-icon>
     Add
@@ -38,6 +52,6 @@
     <clr-icon shape="trash" class="is-solid"></clr-icon>
     Delete
   </button>
-</div>
+</div> -->
 
 <app-character-insert-dialog></app-character-insert-dialog>

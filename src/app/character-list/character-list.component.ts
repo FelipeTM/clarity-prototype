@@ -8,11 +8,11 @@ import { CharacterInsertDialogComponent } from './character-insert-dialog/charac
 import { JSONService } from '../services/json.service'; 
 
 @Component({
-  selector: 'app-content-container',
-  templateUrl: './content-container.component.html',
-  styleUrls: ['./content-container.component.css']
+  selector: 'app-character-list',
+  templateUrl: './character-list.component.html',
+  styleUrls: ['./character-list.component.css']
 })
-export class ContentContainerComponent implements OnInit, AfterViewInit {
+export class CharacterListComponent implements OnInit, AfterViewInit {
 
   dataSource: any;
   selectedChars: Character[] = [];

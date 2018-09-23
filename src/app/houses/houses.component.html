@@ -1,0 +1,19 @@
+<div class="card-container">
+  <div class="card" *ngFor="let house of housesList">
+    <div class="card-header">
+      {{ house.name }}
+      <span *ngIf="isLeader(house.name)" class="label label-success"> Leader </span>
+    </div>
+    <div class="card-img">
+      <img [src]="getImage(house.name)" class="house-crest">
+    </div>
+    <div class="card-block">
+      <p class="card-text">
+        {{ house.name }} house description
+      </p>
+      <p class="card-text text-right">
+        <span class="badge badge-purple">{{ house.points }}</span>points
+      </p>
+    </div>
+  </div>
+</div>
